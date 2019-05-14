@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>登陆页面</title>
+</head>
+<body>
+    <form action="/provider/login" method="post">
+        <input type="hidden" name="url" th:value="${url}">
+        <table border="1" align="center">
+            <tr>
+                <td colspan="2"  align="center">欢迎测试单点登陆</td>
+            </tr>
+            <tr>
+                <td>登陆名:</td>
+                <td><input type="text" name="userName"></td>
+            </tr>
+            <tr>
+                <td>密码:</td>
+                <td><input type="password" name="password"></td>
+            </tr>
+            <tr>
+                <td colspan="2"  align="center">
+                    <button type="submit">登录</button>
+                </td>
+            </tr>
+        </table>
+
+
+    </form>
+
+</body>
+</html>
